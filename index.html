@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar md-txt" id="nav">
+    <a href="#" class="nav-item brand">OK</a>
+    <div class="nav-items">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#skills" class="nav-item">Skills</a>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="hamburger-items">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="resume/Oliver_Kramer_Resume.docx" class="nav-item">Resume</a>
+      <a href="https://www.linkedin.com/in/oliver-kramer1/" class="nav-item">Linkedin</a>
+      <a href="https://github.com/Oliver-K3003" class="nav-item">Github</a>
+      <a href="mailto:oliverkramer3003@gmail.com" class="nav-item">Contact</a>
+    </div>
+  </nav>
+  <nav class="side-nav md-txt">
+    <!-- resume -->
+    <a id="resume" href="resume/Oliver_Kramer_Resume.docx" class="nav-item side-item" download="Oliver_Kramer_Resume">
+      <p>Resume</p>
+      <img src="SVGs/file-lines-solid.svg" alt="" />
+    </a>
+    <!-- linkedin -->
+    <a id="linkedin" href="https://www.linkedin.com/in/oliver-kramer1/" class="nav-item side-item">
+      <p>Linkedin</p>
+      <img src="SVGs/linkedin.svg" alt="" />
+    </a>
+    <!-- github -->
+    <a id="github" href="https://github.com/Oliver-K3003" class="nav-item side-item">
+      <p>Github</p>
+      <img src="SVGs/github.svg" alt="" />
+    </a>
+    <!-- email -->
+    <a id="email" href="mailto:oliverkramer3003@gmail.com" class="nav-item side-item">
+      <p>Contact</p>
+      <img src="SVGs/envelope-solid.svg" alt="" />
+    </a>
+  </nav>
+  <div class="content">
+    <div class="container page h-md-sm">
+      <div class="introduction lg-txt">
+        <div class="intro-content">
+          <div class="intro-text xs-txt">Hi, my name is</div>
+          <div class="intro-title xxl-txt xl-txt-sm">Oliver Kramer</div>
+          <div class="intro-text md-txt">I am a front-end web developer</div>
+        </div>
+        <img src="images/me.png" alt="" class="intro-image" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="about" id="about">
+        <div class="about-title xxl-txt">About Me</div>
+        <div class="about-text sm-txt">
+          <p>
+            I'm currently persuing a bachelor's degree at Queen's University
+            in Kingston, Ontario. I have a passion for developing eye catching
+            web apps for both individuals and businesses.
+          </p>
+          <p>
+            Along with my passion for web development, my other hobbies
+            include mechatronics and 3D modelling and printing...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container vpd-8 vpd-md-0 vpd-sm-0">
+      <!-- <div class="scroll-element" id="projects"></div> -->
+      <div class="project-title xxl-txt">Projects</div>
+      <div class="project-content">
+        <div class="project-card">
+          <img src="images/MacroPadImage.jpg" alt="" />
+          <div class="card-container">
+            <h4 class="card-header">Macro Pad</h4>
+            <p>
+              Designed and modelled the casing in Fusion360. Programmed the
+              functionallity of the macro pad in C++ for the Arduino Micro Pro
+              board.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="undraw_lost_online_re_upmy.svg" alt="" />
+          <div class="card-container">
+            <h4 class="card-header">Warehouse Management System</h4>
+            <p>
+              Worked on an 8 person agile development team to create a
+              warehouse management system. Maintained and managed a BitBucket
+              repository...
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="undraw_lost_online_re_upmy.svg" alt="" />
+          <div class="card-container">
+            <h4 class="card-header">Electronic Storage System</h4>
+            <p>
+              Designed and built a storage system to manage my parts for
+              electronics projects. Uses leds embedded within a storage shelf
+              as indicators, controlled by an ESP32 board along with some
+              shift registers to locate items. A web-based database stores the
+              name and location of items for easy lookup. Makes finding items
+              a much easier task.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------for projects I want them to expand to a full page on click with more details-------------------------------------- -->
+      <!-- <div class="project-item project-1">
+          <div class="project-name md-txt">Electronic Storage System</div>
+          <div class="project-text">
+            <p>
+              Designed and built a storage system to manage my parts for
+              electronics. Uses leds embedded within a storage shelf as
+              indicators, controlled by an ESP32 board along with some shift
+              registers to locate items. A web-based database stores the name
+              and location of items for easy lookup. Makes finding items a much
+              easier task.
+            </p>
+          </div>
+        </div>
+        <div class="project-item project-2">
+          <div class="project-name md-txt">
+            CMPE 320 PROJECT (REPLACE WITH APPROPRIATE NAME)
+          </div>
+          <div class="project-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium iusto quia iste, nisi vel dignissimos non ratione.
+              Blanditiis commodi ducimus impedit nesciunt soluta odit, eius
+              ullam, temporibus ea maiores qui!
+            </p>
+          </div>
+        </div>
+        <div class="project-item project-3">
+          <div class="project-name md-txt">CAD Design Page</div>
+          <div class="project-text">
+            <p>
+              This is a gallery of all my completed CAD models, complete with
+              physical implementation and description of the use case of each
+              element.
+            </p>
+          </div>
+        </div> -->
+    </div>
+    <div class="container page vpd-md-2">
+      <div class="skills" id="skills">
+        <div class="skills-title xxl-txt">My Skills</div>
+        <div class="skills-content">
+          <div class="skill">
+            <img src="SVGs/html5.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>HTML5</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/square-js.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/css3-alt.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>CSS3</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/bootstrap.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>Bootstrap</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/java-svgrepo-com.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/c-svgrepo-com.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>C Programming</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/c-plus-plus-svgrepo-com.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>C++ Programming</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/fi-cnsuxl-arduino.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>Arduino</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="SVGs/python.svg" alt="" class="skill-image" />
+            <div class="skill-container">
+              <p>Python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

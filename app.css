@@ -1,0 +1,587 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------LARGELY APPLICABLE STYLES------------------------------------------------ */
+
+.xs-txt {
+  font-size: 1rem;
+}
+
+.sm-txt {
+  font-size: 1.25rem;
+}
+
+.md-txt {
+  font-size: 1.5rem;
+}
+
+.lg-txt {
+  font-size: 3rem;
+}
+
+.xl-txt {
+  font-size: 3.5rem;
+}
+
+.xxl-txt {
+  font-size: 5rem;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+}
+
+.page {
+  height: 100vh;
+}
+
+.vpd-8 {
+  padding: 0 8rem;
+}
+
+.pd-b-md {
+  padding-bottom: 2rem;
+}
+
+/* ---------------------------------OVERALL STYLING--------------------------------------------------------- */
+
+html {
+  font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.content {
+  padding: 0 4rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.show {
+  transform: translateX(100%);
+}
+
+/* -----------------------------------NAV----------------------------------------------------- */
+/* MOBILE NAV */
+.hamburger-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3d56;
+  position: fixed;
+  top: 10%;
+  right: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.hamburger-items a {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid #585672;
+}
+
+.hamburger-items a:hover {
+  background-color: #585672;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+/* TOP NAV */
+.navbar {
+  width: 100%;
+  background-color: #3f3d56;
+  padding: 1.5rem 0;
+  /* box-shadow: 0 0 5px 1px grey; */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 0 1.5rem;
+}
+
+/* SIDE-NAV */
+.side-nav {
+  top: 43vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.side-item {
+  position: absolute;
+  left: -5rem;
+  width: 8rem;
+  height: 3rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3f3d56;
+  transition: 0.2s;
+}
+
+.side-item:nth-of-type(2) {
+  top: 1.5rem;
+}
+.side-item:nth-of-type(3) {
+  top: 4.5rem;
+}
+.side-item:nth-of-type(4) {
+  top: 7rem;
+}
+
+.side-item img {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(287deg) brightness(105%)
+    contrast(103%);
+}
+
+.side-item:hover {
+  left: 0;
+}
+
+/* ----------------------------------INTRO------------------------------------------------- */
+
+.introduction {
+  padding-top: 3.5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #3f3d56;
+}
+
+.intro-text {
+  color: #fc2f58;
+}
+
+.intro-content {
+  text-align: left;
+}
+
+.intro-image {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px grey;
+}
+
+/* ---------------------------------ABOUT-------------------------------------------------- */
+
+.about {
+  height: 109vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3f3d56;
+}
+
+.about-title {
+  border-bottom: 0.1rem solid #fc2f58;
+  margin-bottom: 2.5rem;
+}
+
+.about-text {
+  max-width: 30rem;
+  padding-left: 2rem;
+  color: #3f3d56;
+}
+
+/* ---------------------------------PROJECTS----------------------------------------------- */
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  padding: 1rem;
+  width: 20rem;
+  max-height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.project-card img {
+  width: 100%;
+  max-height: 15rem;
+
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+}
+
+.card-container {
+  height: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid #3f3d56;
+}
+
+.card-container p {
+  line-height: 1.5rem;
+  padding-top: 2rem;
+}
+
+.card-header {
+  font-size: 1.75rem;
+}
+
+/* .scroll-element {
+  position: absolute;
+  top: 195vh;
+} */
+
+.project-title {
+  color: #3f3d56;
+  display: inline-block;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid #fc2f58;
+}
+
+/* .project-item {
+  width: 100%;
+  height: 40rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.project-1 {
+  background-image: url(undraw_lost_online_re_upmy.svg);
+}
+
+.project-2 {
+  background-image: url(undraw_social_expert_re_elbp.svg);
+}
+
+.project-3 {
+  background-image: url(undraw_spreadsheet_re_cn18.svg);
+}
+
+.project-name {
+  font-weight: 600;
+  color: #3f3d56;
+}
+
+.project-text {
+  display: flex;
+  justify-content: center;
+  color: #3f3d56;
+}
+
+.project-text p {
+  max-width: 50rem;
+}
+
+/* -----------------------------SKILLS---------------------------------- */
+
+.skills {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3f3d56;
+}
+
+.skills-title {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid #fc2f58;
+  display: inline-block;
+}
+
+.skill {
+  display: inline-block;
+}
+
+.skills-content img {
+  height: 10rem;
+  width: 10rem;
+  filter: invert(24%) sepia(7%) saturate(1972%) hue-rotate(205deg)
+    brightness(99%) contrast(95%);
+  padding: 2rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.skills-content img:hover {
+  opacity: 1;
+}
+
+.skills-content img:hover + .skill-container p {
+  opacity: 1;
+  color: #3f3d56;
+}
+
+.skill-container p {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* NEED TO MAKE ADJUSTMENTS FOR LESS THAN 1300 width */
+@media (max-width: 1300px) {
+  .h-md-sm {
+    height: 70vh;
+  }
+
+  .introduction {
+    padding-top: 5.5em;
+  }
+  .intro-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .vpd-md-0 {
+    padding: 0 0rem;
+  }
+  .skills {
+    padding-top: 5rem;
+  }
+  .skills-content img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .about {
+    flex-direction: column;
+  }
+  .skills-content img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-content img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .vpd-md-2 {
+    padding: 0 1rem;
+  }
+}
+/*CURRENTLY WORKS UP TO AROUND 800px --> need redesign for smaller screens*/
+@media (max-width: 800px) {
+  .hamburger-items {
+    top: 7%;
+  }
+  .content {
+    padding: 0 0.2rem;
+  }
+  .nav-items {
+    display: none;
+  }
+  .side-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  .brand {
+    display: block;
+  }
+  .intro-image {
+    display: none;
+  }
+  .skills-content img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .about-text {
+    padding-left: 0;
+    padding: 0 0.5rem;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .project-item {
+    height: 20rem;
+  }
+  .vpd-sm-0 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .hamburger-items {
+    top: 8%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hamburger-items {
+    top: 10%;
+  }
+}
+
+@media (max-width: 360px) {
+  .xl-txt-sm {
+    font-size: 4.5rem;
+  }
+}
