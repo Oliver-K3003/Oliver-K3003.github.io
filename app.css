@@ -86,6 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -100,17 +101,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -118,6 +123,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -267,9 +273,11 @@ html {
 .side-item:nth-of-type(2) {
   top: 1.5rem;
 }
+
 .side-item:nth-of-type(3) {
   top: 4.5rem;
 }
+
 .side-item:nth-of-type(4) {
   top: 7rem;
 }
@@ -277,8 +285,7 @@ html {
 .side-item img {
   width: 2rem;
   height: 2rem;
-  filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(287deg) brightness(105%)
-    contrast(103%);
+  filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(287deg) brightness(105%) contrast(103%);
 }
 
 .side-item:hover {
@@ -374,10 +381,10 @@ html {
   font-size: 1.75rem;
 }
 
-/* .scroll-element {
+.scroll-element {
   position: absolute;
-  top: 195vh;
-} */
+  top: 165vh;
+}
 
 .project-title {
   color: #3f3d56;
@@ -450,8 +457,7 @@ html {
 .skills-content img {
   height: 10rem;
   width: 10rem;
-  filter: invert(24%) sepia(7%) saturate(1972%) hue-rotate(205deg)
-    brightness(99%) contrast(95%);
+  filter: invert(24%) sepia(7%) saturate(1972%) hue-rotate(205deg) brightness(99%) contrast(95%);
   padding: 2rem;
   opacity: 0.8;
   transition: opacity 0.2s ease-in-out;
@@ -461,7 +467,7 @@ html {
   opacity: 1;
 }
 
-.skills-content img:hover + .skill-container p {
+.skills-content img:hover+.skill-container p {
   opacity: 1;
   color: #3f3d56;
 }
@@ -480,16 +486,20 @@ html {
   .introduction {
     padding-top: 5.5em;
   }
+
   .intro-image {
     width: 20rem;
     height: 20rem;
   }
+
   .vpd-md-0 {
     padding: 0 0rem;
   }
+
   .skills {
     padding-top: 5rem;
   }
+
   .skills-content img {
     height: 8rem;
     width: 8rem;
@@ -500,6 +510,7 @@ html {
   .about {
     flex-direction: column;
   }
+
   .skills-content img {
     height: 5rem;
     width: 5rem;
@@ -511,39 +522,49 @@ html {
     height: 3rem;
     width: 3rem;
   }
+
   .vpd-md-2 {
     padding: 0 1rem;
   }
 }
+
 /*CURRENTLY WORKS UP TO AROUND 800px --> need redesign for smaller screens*/
 @media (max-width: 800px) {
   .hamburger-items {
     top: 7%;
   }
+
   .content {
     padding: 0 0.2rem;
   }
+
   .nav-items {
     display: none;
   }
+
   .side-nav {
     display: none;
   }
+
   .hamburger {
     display: block;
     cursor: pointer;
     margin-right: 1rem;
   }
+
   .brand {
     display: block;
   }
+
   .intro-image {
     display: none;
   }
+
   .skills-content img {
     height: 2rem;
     width: 2rem;
   }
+
   .about-text {
     padding-left: 0;
     padding: 0 0.5rem;
@@ -560,9 +581,11 @@ html {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
   .project-item {
     height: 20rem;
   }
+
   .vpd-sm-0 {
     padding: 0;
   }
